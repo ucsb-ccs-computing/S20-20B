@@ -25,7 +25,7 @@ extra_exam_week: true
 cal_dates: >                                                                    
   [                                                                            
     {"label":"S20 1st day of instruction", "date":"2020-03-30" },              
-    {"label":"Univ Holiday", "date":"2020-05-30" },                          
+    {"label":"Univ Holiday", "date":"2020-05-25" },    
     {"label":"S20 instruction ends", "date":"2020-06-05" },                    
     {"label":"S20 finals start", "date":"2020-06-06" },                        
     {"label":"S20 finals end", "date":"2020-06-12" },                          
