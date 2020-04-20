@@ -15,3 +15,10 @@ Welcome to {{site.course}}!
 </ul>
 </div>
 
+<!-- labs -->
+{% include collapse-card-begin.html label="Labs" id="labs" %}
+## Labs
+{% include lab_table.html %}
+{% include collapse-card-end.html %}
+<!-- end-labs -->
+
