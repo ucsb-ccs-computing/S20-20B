@@ -52,6 +52,10 @@ collections:
   info:
     output: true
     permalink: /info/:path/
+  lab:
+    output: true
+    permalink: /lab/:path/
+    last_before: false
 
 
 defaults:
@@ -66,6 +70,12 @@ defaults:
       type: info
     values:
       layout: default
+  -
+    scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
   -
     scope:
       path: "syllabus.md"

@@ -52,13 +52,18 @@ In addition to your constructor, your class definition should also support "sett
 
 Each Animal object should be able to call a method that returns a string with all the animal attributes. The string should contain all attributes in the following EXACT format:
 
-<code>
+<tt>
 a = Animal("dog", 12.2, 2, "Ruffles")
 print(a.toString())
+</tt>
 
-Output:
+<tt>
+<b>Output:</b>
+</tt>
+
+<tt>
 Species: DOG, Name: RUFFLES, Age: 2, Weight: 12.2
-</code>
+</tt>
 
 ## AnimalShelter.py
 
