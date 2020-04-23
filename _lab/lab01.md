@@ -50,16 +50,14 @@ In addition to your constructor, your class definition should also support "sett
 * `setAge(self, age)`
 * `setName(self, name)`
 
-Each Animal object should be able to call a method that returns a string with all the animal attributes. The string should contain all attributes in the following EXACT format:
+Each Animal object should be able to call a method `toString` that returns a `str` with all the animal attributes. The string should contain all attributes in the following EXACT format:
 
-<tt>
+```python
 a = Animal("dog", 12.2, 2, "Ruffles")
 print(a.toString())
-</tt>
+```
 
-<tt>
 <b>Output:</b>
-</tt>
 
 <tt>
 Species: DOG, Name: RUFFLES, Age: 2, Weight: 12.2
