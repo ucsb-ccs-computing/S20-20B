@@ -7,7 +7,7 @@ assigned: 2020-05-11 8:00:00.00-7
 due: 2020-05-18 23:59:59.59-7
 ---
 
-In this lab, you'll have the opportunity to practive with:
+In this lab, you'll have the opportunity to practice with:
 
 * Defining classes in Python
 * Implementing a Ordered LinkedList
