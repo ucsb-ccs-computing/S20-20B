@@ -107,7 +107,6 @@ print(bc.getBooksByAuthor("King, Stephen"))
 Title: Rage, Author: King, Stephen, Year: 1977
 Title: The Shining, Author: King, Stephen, Year: 1977
 Title: Cujo, Author: King, Stephen, Year: 1981
-
 </tt>
 
 * `getAllBooksInCollection(self)` - method that returns a str containing the details of all Books in the BookCollection. Note that each book will be in its own line (ending with a `\n` character). An example (with correct order) is shown below:
@@ -133,7 +132,6 @@ Title: Ready Player One, Author: Cline, Ernest, Year: 2011
 Title: Rage, Author: King, Stephen, Year: 1977
 Title: The Shining, Author: King, Stephen, Year: 1977
 Title: Cujo, Author: King, Stephen, Year: 1981
-
 </tt>
 
 ## `testFile.py` pytest
