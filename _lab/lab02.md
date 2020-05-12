@@ -29,7 +29,7 @@ There will be no starter code for this assignment, but rather the class descript
 
 You should organize your lab work in its own directory. This way all files for a lab are located in a single folder. Also, this will be easy to import various files into your code using the `import / from` technique shown in lecture.
 
-# `Book.py` class
+# Book.py class
 
 The `Book.py` file will contain the definition of a Book. We will define the Book attributes as follows:
 
@@ -77,7 +77,7 @@ The `BookCollection` class will be responsible for maintaining the overall struc
 * `__init__(self)` - constructor that will have a head refernce that references the first node in the ordered linked list. This should be set to `None` by default.
 * `isEmpty(self)` - method that returns True (boolean) of the BookCollection is empty, and returns False otherwise.
 * `getNumberOfBooks(self)` - method that returns the total number of Books (int) in the BookCollection.
-* `insertBook(self, book)` - method that inserts a Book in the appropriate place. As mentioned before, all Books in the BookCollection are ordered based on 1) the Book's author, then 2) the Book's year of publication, and then 3) the Book's title.
+* `insertBook(self, book)` - method that inserts a Book in the appropriate place. As mentioned before, all Books in the BookCollection are ordered based on 1) the Book's author (alphabetical / lexicographical order), then 2) the Book's year of publication, and then 3) the Book's title (alphabetical / lexicographical order).
 
 Although it's not a requirement to overload operators for the Book class, I would recommend considering to overload the `>` operator (`__gt__`) in the Book class. Since we need to find the proper position in the linked list using the order specification above, we can simply compare books with each other by walking down the list, checking if the inserted book is `>` than a Book in the BookCollection, and keep walking down the list until it isn't. We then know the place where the book needs to be inserted. You'll need to do some logic to replace the references for the BookCollectionNodes when inserting the Book in the appropriate place.
 
@@ -85,7 +85,7 @@ For more information on overloading python operators, you can refer to this simp
 
 [https://www.geeksforgeeks.org/operator-overloading-in-python/](https://www.geeksforgeeks.org/operator-overloading-in-python/)
 
-* `getBooksByAuthor(self, author)` - method that returns a str containing all of the Book details by a specified author. Note that each book will be in its own line (ending with a `\n` character). An example (with correct order) is shown below:
+* `getBooksByAuthor(self, author)` - method that returns a str containing all of the Book details by a specified author. Note that each book will be in its own line (ending with a `\n` character). Also note that the input parameter (author) may be in a different case than the case of the author that the book was constructed with - in this situation, the comparison of the authors' names should be case insensitive ('a' == 'A'). An example (with correct order) is shown below:
 
 ```python
 b0 = Book("Cujo", "King, Stephen", 1981)
@@ -98,7 +98,7 @@ bc.insertBook(b0)
 bc.insertBook(b1)
 bc.insertBook(b2)
 bc.insertBook(b3)
-print(bc.getBooksByAuthor("King, Stephen"))
+print(bc.getBooksByAuthor("KING, Stephen"))
 ```
 
 <b> Output: </b>
@@ -107,6 +107,7 @@ print(bc.getBooksByAuthor("King, Stephen"))
 Title: Rage, Author: King, Stephen, Year: 1977
 Title: The Shining, Author: King, Stephen, Year: 1977
 Title: Cujo, Author: King, Stephen, Year: 1981
+
 ```
 
 * `getAllBooksInCollection(self)` - method that returns a str containing the details of all Books in the BookCollection. Note that each book will be in its own line (ending with a `\n` character). An example (with correct order) is shown below:
@@ -132,9 +133,10 @@ Title: Ready Player One, Author: Cline, Ernest, Year: 2011
 Title: Rage, Author: King, Stephen, Year: 1977
 Title: The Shining, Author: King, Stephen, Year: 1977
 Title: Cujo, Author: King, Stephen, Year: 1981
+
 ```
 
-## `testFile.py` pytest
+## testFile.py pytest
 
 This file should import your `Book`, `BookCollection`, and `BookCollectionNode` classes so you can write unit tests using pytest to test your functionality is correct. Think of various scenarios and edge cases when testing your code. Even though Gradescope will not use this file when running the automated tests, it is important to provide this file with various test cases (testing is important!!).
 
