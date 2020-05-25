@@ -60,15 +60,15 @@ Your CustomPizza class definition will exist in `CustomPizza.py`. The CustomPizz
 
 The price of a CustomPizza is defined by two things: 1) the size of the pizza and 2) the number of toppings the pizza will have (assuming no toppings is a simple cheese pizza). CustomPizzas will have the following set prices based on its size:
 
-* Small: $8.00
-* Medium: $10.00
-* Large: $12.00
+* Small (S): $8.00
+* Medium (M): $10.00
+* Large (L): $12.00
 
 The size of the pizza also dictates the amount each additional topping will cost based on the following definition:
 
-* Small: + $0.50 per additional topping
-* Medium: + $0.75 per additional topping
-* Large: + $1.00 per additional topping
+* Small (S): + $0.50 per additional topping
+* Medium (M): + $0.75 per additional topping
+* Large (L): + $1.00 per additional topping
 
 Since we now know what the price of a pizza should be based on the size, the CustomPizza constructor should determine the base price of the pizza and set it appropriately (remember, no need to write it in this class if we already have the method in `Pizza.py`).
 
@@ -114,9 +114,9 @@ A SpecialtyPizza class definition will exist in `SpecialtyPizza.py`. Similar to 
 
 Also similar to the CustomPizza class, SpecialtyPizza will use the size to set its price appropriately. The price of a SpecialtyPizza is defined as follows:
 
-* Small: $12.00
-* Medium: $14.00
-* Large: $16.00
+* Small (S): $12.00
+* Medium (M): $14.00
+* Large (L): $16.00
 
 Unlike custom pizzas, specialty pizzas do not have a list of toppings associated with it, but do have a unique name that will be displayed when getting details for this pizza. This class should also have its own `getPizzaDetails` method:
 
