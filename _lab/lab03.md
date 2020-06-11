@@ -203,7 +203,7 @@ Since we can try to remove from an empty OrderQueue with undefined behavior, we 
 In addition to the construction of the data structure in this class, two methods are required to be implemented:
 
 * `addOrder(self, pizzaOrder)` - a pizzaOrder object will be stored in the MinHeap prioritized by its time attribute (lower value means higher priority).
-* `processNextOrder(self)` - essentially this is removing the root value from the MinHeap.
+* `processNextOrder(self)` - essentially this is removing the root value from the MinHeap. This method should return a string that is the root to be removed order description. 
 
 The automated tests will create various pizza orders with different time attributes. It will then processNextOrder one at a time and check the removed PizzaOrder is in the right priority by checking their expected `getOrderDescription()` string. You should write similar tests to confirm the MinHeap state is in the correct order.
 
